@@ -14,6 +14,7 @@ class CreateContactFormsTable extends Migration
     public function up()
     {   
         //データベース大文字小文字が確認できない場合があるためスネーク 複数形contact_forms
+        // 新規作成の時はcreate 追加の時はSchema::table
         Schema::create('contact_forms', function (Blueprint $table) {
             $table->bigIncrements('id');
             //氏名・メールアドレス・url・性別・年齢・お問い合わせ内容
