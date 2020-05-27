@@ -1,5 +1,7 @@
 <?php
 
+// useはトレイトの宣言(複数use使用)
+// それぞれScheme,Blueprint,Migration関数を使っている
 use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
